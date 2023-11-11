@@ -1,0 +1,136 @@
+/* App.css */
+
+/* Overall page styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0e0e0; /* Light gray background for overall app */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Dark text for better readability */
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full height of the viewport */
+  margin-top: 100px;
+}
+
+.paper {
+  background-color: #f0f0f0 !important; /* Slightly darker background for paper */
+  padding: 40px !important; /* Padding around the paper */
+  border-radius: 16px !important; /* Rounded corners for the paper */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1) !important; /* Shadow for depth */
+  width: 100% !important;
+  max-width: 600px !important; /* Maximum width of paper */
+  margin-left: 75px !important;
+}
+
+/* Input container styling */
+.prompt-container {
+  width: 100%;
+  margin-bottom: 20px; /* Margin at the bottom of the input container */
+}
+
+
+.prompt-field {
+  background-color: #ffffff; /* White background for the input field */
+  border-radius: 16px; /* Rounded corners for the input field */
+  box-shadow: 0 1px 3px rgba(0,48,75,255); /* Subtle shadow for depth */
+}
+
+.prompt-input {
+  padding: 15px !important; /* Spacing inside the input field */
+  font-size: 16px !important; /* Font size for the input text */
+  color: #00304b !important;
+}
+
+/* Override MUI filled input style */
+.prompt-field .MuiFilledInput-root {
+  background-color: transparent; /* Override MUI's filled input background */
+  &:hover {
+    background-color: transparent;
+  }
+  &.Mui-focused {
+    background-color: transparent;
+  }
+}
+
+/* Button styling */
+.generate-button-div {
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center;
+  margin-top: 20px; /* Margin at the top of the button */
+}
+
+.generate-button {
+  background-color: #205574 !important; /* Blue color for the button */
+  color: white !important; /* White text on the button */
+  font-weight: bold !important; /* Bold text for the button */
+  padding: 10px 30px !important; /* Padding inside the button */
+  border-radius: 16px !important; /* Rounded corners for the button */
+  box-shadow: 0 4px 8px rgba(0,48,75,255) !important; /* Shadow for depth */
+  &:hover {
+    background-color: #00304b !important; /* Darker blue on hover */
+  }
+}
+
+/* Loading indicator styling */
+.loader {
+  display: flex;
+  justify-content: center; /* Center the loader horizontally */
+  margin-top: 20px; /* Margin at the top of the loader */
+}
+
+/* Icon button styling for attach and add icons */
+.button-icons {
+  display: flex;
+  align-items: center; /* Align icons vertically */
+}
+
+.button-icons .MuiIconButton-root {
+  margin-right: 8px; /* Margin to the right of each icon button */
+  color: #00304b; /* Blue color to match the button */
+  &:hover {
+    background-color: rgba(33, 150, 243, 0.1); /* Light blue background on hover */
+  }
+}
+
+.button-icons .MuiIconButton-root:last-child {
+  margin-right: 0; /* No margin to the right of the last icon button */
+}
+
+
+.MuiButton-root {
+  text-transform: none; /* Prevent uppercase transform for button text */
+}
+
+.input-adornment:hover {
+  color: #00304b;
+  cursor: pointer;
+}
+
+/* Style the content container */
+.content-container {
+  position: relative;
+  z-index: 1; /* Ensure the content appears above the fixed input */
+}
+
+/* Style the FollowUpInput container */
+.follow-up-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 20px; /* Margin at the bottom of the input container */
+  background-color: white; /* Set the desired background color */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a box shadow for separation */
+  padding: 16px; /* Optional: Add some padding for better appearance */
+  z-index: 2; /* Ensure it appears above the content */
+}
+
+.home-icon{
+  margin-left: 10px !important;
+}
