@@ -13,9 +13,6 @@ import './App.css';
 
 function Main({ onGenerateEmail }) {
     const [prompt, setPrompt] = useState('');
-    const [recipientNames, setRecipientNames] = useState([]);
-    const [newRecipient, setNewRecipient] = useState('');
-    const [generatedEmail, setGeneratedEmail] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
 
@@ -79,12 +76,12 @@ function App() {
 
     // Make a POST request to your FastAPI backend
     const response = await fetch('http://localhost:8000/generate-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    });
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+});
 
     if (response.ok) {
         const responseData = await response.json();
