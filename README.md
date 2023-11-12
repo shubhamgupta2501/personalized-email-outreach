@@ -69,3 +69,83 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # personalized-email-outreach
+
+bashCopy code
+
+`# Personalized Email Outreach Frontend
+
+Welcome to the frontend of the "Personalized Email Outreach" project. This frontend is built using React and provides a user-friendly interface for users to input their email prompts, generate personalized email content, and view the results.
+
+## Prerequisites
+
+Before setting up and running the frontend, please ensure that you have the following prerequisites:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+
+## Setup Instructions
+
+Follow these steps to set up and run the frontend:
+
+1. **Clone the Repository:**
+
+   Clone this GitHub repository to your local machine:
+
+   ```shell
+   git clone https://github.com/your-username/personalized-email-frontend.git`
+
+1.  Navigate to the Frontend Directory:
+
+    Change your current directory to the frontend folder:
+
+    shellCopy code
+
+    `cd personalized-email-frontend`
+
+2.  Install Dependencies:
+
+    Install the required Node.js packages using npm or Yarn:
+
+    shellCopy code
+
+    `npm install
+    # or
+    yarn`
+
+3.  Run the Frontend:
+
+    Start the development server to run the frontend:
+
+    shellCopy code
+
+    `npm start
+    # or
+    yarn start`
+
+    The frontend will be accessible at `http://localhost:3000`.
+
+Usage
+-----
+
+The frontend provides a simple user interface for generating personalized emails. Users can input their email prompts, and the backend will generate email content based on the provided prompts. The results can be viewed on the "Generated Email" page.
+
+Folder Structure
+----------------
+
+The frontend code is organized into components. Key components include:
+
+-   `App.js`: The main application component that handles routing and communication with the backend.
+-   `Main.js`: The component responsible for collecting email prompts and generating emails.
+-   `GeneratedEmailPage.js`: The component for displaying generated email content.
+-   `Header.js`, `Footer.js`: Components for the header and footer of the application.
+-   `FollowUpInput.js`: Component for entering follow-up questions.
+-   `PromptInput.js`: Component for entering initial email prompts.
+-   `RecipientList.js`, `RecipientChip.js`: Components for managing email recipients.
+-   `EmailTemplate.js`: Component that provides a basic structure for the application.
+
+Deployment
+----------
+
+To deploy the frontend, you can use various hosting services. Make sure to update the backend API URL in `App.js` to match the location of your backend.
+
+For example, if you decide to deploy both the frontend and backend on AWS, you can configure CORS settings in your FastAPI backend to allow requests from your frontend domain.a
